@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinder A Journey</title>
+  <style>
+    body {
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #cfe9fd;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 5px solid #fdd1d7;
+    }
+    header img {
+      width: 50px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    header h1 {
+      display: inline;
+      font-size: 2rem;
+      color: #333;
+    }
+    .container {
+      width: 90%;
+      margin: auto;
+      margin-top: 20px;
+    }
+    section {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    section h2 {
+      font-size: 1.5rem;
+      color: #555;
+    }
+    .feature {
+      margin-bottom: 10px;
+    }
+    .feature.checklist li {
+      list-style: square;
+      margin: 5px 0;
+    }
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    .note-input {
+      width: calc(100% - 22px);
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      margin-top: 8px;
+    }
+    .pastel-text {
+      margin-left: 10px;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #fff9c4;
+      font-size: 0.9rem;
+    }
+    /* สีในแต่ละ Section */
+    section.personal { background-color: #fff4cc; }
+    section.development { background-color: #cceef6; }
+    section.vaccine { background-color: #fdd1d7; }
+    section.nutrition { background-color: #daffdf; }
+    section.activities { background-color: #fde9fb; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/742/742753.png" alt="Logo">
+    <h1>Kinder A Journey</h1>
+  </header>
+
+  <div class="container">
+    <!-- Child Information Section -->
+    <section class="personal">
+      <h2>ข้อมูลส่วนตัวเด็ก</h2>
+      <p>ชื่อ: <span class="pastel-text">[ใส่ชื่อ]</span></p>
+      <p>วันเกิด: <span class="pastel-text">[เลือกวันเกิด]</span></p>
+      <p>เพศ: <span class="pastel-text">[ชาย/หญิง]</span></p>
+      <textarea class="note-input" placeholder="ช่องหมายเหตุ... ข้อมูลเพิ่ม"></textarea>
+    </section>
+
+    <!-- Development Section -->
+    <section class="development">
+      <h2>การติดตามพัฒนาการ</h2>
+      <ul class="checklist">
+        <li><input type="checkbox"> ยิ้มตอบสนอง (0-1 เดือน)</li>
+        <li><input type="checkbox"> คว่ำหน้า-เงยคอ (2-3 เดือน)</li>
+        <li><input type="checkbox"> พูดคำง่าย <em>(ม่าม้า, ปาปา)</em> (8-12 เดือน)</li>
+      </ul>
+      <textarea class="note-input" placeholder="ช่องหมายเหตุ..."></textarea>
+    </section>
+
+    <!-- Vaccine Section -->
+    <section class="vaccine">
+      <h2>การรับวัคซีน</h2>
+      <ul class="checklist">
+        <li><input type="checkbox"> วัคซีนป้องกัน BCG (แรกเกิด)</li>
+        <li><input type="checkbox"> DTP-HB-Hib (2 เดือน)</li>
+        <li><input type="checkbox"> วัคซีนเพื่อเสริม (1 ปี)</li>
+      </ul>
+      <textarea class="note-input" placeholder="ช่องหมายเหตุ..."></textarea>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section class="nutrition">
+      <h2>อาหารสำหรับเด็ก</h2>
+      <p><strong>เด็กแรกเกิด - 6 เดือน:</strong> นมแม่เป็นอาหารหลัก</p>
+      <p><strong>6-12 เดือน:</strong> ข้าวบด และผักต้ม</p>
+      <p><strong>1-3 ปี:</strong> ข้าว หลักโภชนาการเพิ่มผลไม้</p>
+      <textarea class="note-input" placeholder="ช่องหมายเหตุ..."></textarea>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="activities">
+      <h2>กิจกรรมที่เหมาะสม</h2>
+      <ul class="checklist">
+        <li><input type="checkbox"> อุ้มและพูดคุย (0-6 เดือน)</li>
+        <li><input type="checkbox"> พานั่งเล่น Interactive (6 เดือน)</li>
+        <li><input type="checkbox"> สอนเดิน เริ่มเล่นสนามเด็กเล่น (1 ปี)</li>
+      </ul>
+      <textarea class="note-input" placeholder="ช่องหมายเหตุ..."></textarea>
+    </section>
+  </div>
+
+  <footer>
+    © Kinder A Journey - สร้างสรรค์รักให้ลูกน้อย
+  </footer>
+</body>
+</html>
